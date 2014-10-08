@@ -1,6 +1,6 @@
 FROM python:2.7
 
-RUN pip install -r requirements.txt
+RUN pip install -r hellodjango/requirements.txt
 ADD . /code
 WORKDIR /code
 
