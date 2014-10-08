@@ -1,0 +1,17 @@
+{
+    "app_name": "hellodjango",
+    "services": [
+        {
+            "service_name": "hellodjango-service",
+            "components": [
+                {
+                    "component_name": "djangoexample",
+                    "image": "giantswarm/djangoexample",
+                    "args": ["python", "manage.py", "runserver_plus", "--threaded"],
+                    "ports": [ "8000/tcp" ],
+                    "domains": { "djangoexample.alpha.giantswarm.io": "8000" }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+web:
+  build: .
+  command: python manage.py runserver_plus --threaded
+  ports:
+   - "8000:8000"
